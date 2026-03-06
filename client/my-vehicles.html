@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMS - My Vehicles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="vms-app">
+    <nav class="sidebar">
+        <div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit;"><i class="bi bi-car-front-fill text-primary"></i> VMS Portal</a></div>
+        <div class="sidebar-heading">My Menu</div>
+        <ul class="sidebar-menu">
+            <li><a href="../dashboards/client.html"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a></li>
+            <li><a href="add-vehicle.html"><i class="bi bi-car-front"></i> Add Vehicle</a></li>
+                        <li><a href="service-history.html"><i class="bi bi-clock-history"></i> Service History</a></li>
+                        <li><a href="chatbot.html"><i class="bi bi-chat-dots"></i> AI Assistant</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <h5 class="mb-0 fw-bold"><a href="../dashboards/client.html" class="topbar-back-btn me-2"><i class="bi bi-arrow-left"></i></a>My Vehicles</h5>
+                <small class="text-muted">Manage your registered vehicles in one place</small>
+            </div>
+        </header>
+
+        <div class="container-fluid p-4 fade-in">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start justify-content-between mb-4">
+                                <div class="vehicle-icon-wrap">
+                                    <i class="bi bi-car-front-fill text-primary fs-3"></i>
+                                </div>
+                                <span class="badge rounded-pill vehicle-status-badge healthy-status">Healthy</span>
+                            </div>
+                            <h5 class="fw-bold mb-1">2021 Ford Bronco</h5>
+                            <p class="text-muted mb-4">SUV • Midnight Blue • License: XYZ-1234</p>
+                            <div class="vehicle-spec-grid">
+                                <div><span class="vehicle-label">Mileage</span><strong>34,800 km</strong></div>
+                                <div><span class="vehicle-label">Fuel Type</span><strong>Gasoline</strong></div>
+                                <div><span class="vehicle-label">Last Service</span><strong>Sept 15, 2026</strong></div>
+                                <div><span class="vehicle-label">Next Check</span><strong>Nov 02, 2026</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start justify-content-between mb-4">
+                                <div class="vehicle-icon-wrap">
+                                    <i class="bi bi-car-front-fill text-primary fs-3"></i>
+                                </div>
+                                <span class="badge rounded-pill vehicle-status-badge service-status">Service Required</span>
+                            </div>
+                            <h5 class="fw-bold mb-1">2018 Honda Civic</h5>
+                            <p class="text-muted mb-4">Sedan • Silver • License: ABC-9876</p>
+                            <div class="vehicle-spec-grid">
+                                <div><span class="vehicle-label">Mileage</span><strong>71,250 km</strong></div>
+                                <div><span class="vehicle-label">Fuel Type</span><strong>Gasoline</strong></div>
+                                <div><span class="vehicle-label">Last Service</span><strong>July 10, 2026</strong></div>
+                                <div><span class="vehicle-label">Next Check</span><strong>Due Now</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden add-vehicle-card">
+                        <div class="card-body p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="vehicle-icon-wrap mb-3" style="background: rgba(59, 130, 246, 0.12);">
+                                <i class="bi bi-plus-lg text-primary fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Add Vehicle</h5>
+                            <p class="text-muted mb-4">Register a new vehicle and keep all its service details in one place.</p>
+                            <a href="add-vehicle.html" class="btn btn-primary rounded-pill px-4 py-2">Add Vehicle</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
